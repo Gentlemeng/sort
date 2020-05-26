@@ -18,3 +18,10 @@ function bubbleSort(arr){
 }
 let newArr = bubbleSort([10,9,8,7,6,5,4,3,2,1])
 console.log(newArr)
+
+// 拓展1：es6解构赋值 变量交换
+let arr = [1,2]
+[arr[0],arr[1]] = [arr[1],arr[0]]
+// 拓展2：不声明第三个变量和不使用es6解构赋值
+var a = 1,b = 2;
+a = [b,b=a][0];
